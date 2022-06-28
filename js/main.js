@@ -56,6 +56,7 @@
     });
 
     //owl-carousel
+    console.log('Hurray');
 
     $(".owl-carousel").owlCarousel({
         autoplay:true,
