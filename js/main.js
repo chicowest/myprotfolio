@@ -62,7 +62,8 @@
         autoplay:true,
         autoplayhoverpause: true,
         autoplaytimeout: 100,
-        items: 2,
+        items: 1,
+        dots: false,
         nav: true,
         loop: true,
         lazyLoad: true,
@@ -70,12 +71,14 @@
         padding: 5,
         stagePadding: 5,
         responsive: {
-            0 : {
-                items: 1,
-                dots: false
-            },
-            485 : {
+            
+            700 : {
                 items: 2,
+                dots: 
+                false,
+            },
+            400 : {
+                items: 1,
                 dots: false
             },
             /*--- add more pictures

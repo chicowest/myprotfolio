@@ -14,6 +14,73 @@
 
 
 /*start navigation*/
+.header{
+    margin-top: -2.9px;
+    min-height: 100vh;
+    width: 100;
+    background-image: linear-gradient (rgba(4,9,30,0.7),rgba(4,9,30,0.7)) url(../img/banner/home-banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 0.6% 1%;
+    justify-content: space-between;
+    text-align: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    list-style: none;
+}
+.nav-links ul li a{
+    color: blue;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: --roboto;
+}
+li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: 2px;
+    transition: 0.5s;
+    background: #f44336;
+     
+}
+nav-links,ul,li:hover::after{
+    width: 100%;
+}
+
+.site-title{
+    
+    left: 90%;
+}
+.site-title,site-tit{
+    margin-top: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+.site-title,site-tit h4{
+    color: red;
+}
+
+
+
+
+
+
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
@@ -39,70 +106,6 @@
     background-clip: text;
 }
 /*end navigation*/
-/*---#######START MEDIA QUERY FOR HEADER SECTION###----*/
-@media only screen and (min-width: 200px) and (max-width: 767px) and (orientation : portrait){
-    body{
-        
-        margin: auto;
-        padding: 0;
-        max-width: 100%;
-        position: relative;
-        background: center;
-    }
-    .header_area .main-menu .navbar .container-fluid {
-        display: flex;
-        position: absolute;
-        
-    }
-    .header_area .main-menu img{
-        max-width: auto;
-        padding: 0.4rem;
-        margin-left:-150px;
-   }
-    .header_area .main-menu .navbar .navbar-nav{
-        position: absolute;
-        
-    }
-    
-    .site-banner .container h4{}
-
-    .chico{
-        display: block;
-        
-    }
-
-
-    .chico ul li a{
-        font-size: 40px;
-        background: #f44336;
-        height: 15vh;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        
-        
-        
-    }
-    
-}
-    /*
-    @media(max-width: 400px){
-    
-        /*start navigation
-        
-        .header_area{
-            padding: 1rem 1rem;
-            font-family: var(--roboto);
-            text-transform: uppercase;
-            font-weight: 500;
-            padding: 0.7rem;
-            color:var(--title-color);
-            background: pink;
-        }
-        }
-      */ 
-
-/*---####### END MEDIA QUERY FOR HEADER SECTION###----*/
 
 /*Banner area*/
 .site-main .site-banner{
@@ -191,7 +194,13 @@
 /*End Banner area*/
 /*Start About area*/
 .site-main .about-area{
+
     padding: 3rem 1rem;
+}
+.site-main .about-area img{
+    padding: 7rem 0;
+    width: 30rem;
+
 }
 h2 > span{
 display: block;
@@ -203,9 +212,10 @@ letter-spacing: 21px;
     padding: 1rem 0;
     color: rgb(71, 62, 62);
 }
-p.para{
+p{
     color: green;
-    font: normal 500 16px/ 25px var(--roboto);
+    font: normal 500 6px/ 25px var(--roboto);
+    
 }
 /*End About area*/
 /*Start Brand Area*/
@@ -241,6 +251,8 @@ p.para{
 .brand-area .ris-wor2 .col-lg-4 >.single-brand:hover> img{
     filter: brightness(0.15);
 }
+
+/*====START experience area =======*/
 .brand-area .experience-area{
     padding-left: 1rem;
 }
@@ -255,22 +267,15 @@ p.para{
     padding-left: 8rem;
     position: relative;
 }
-.experience-area .bgpanel{
-    
-    position: absolute;
-    left: 770px; top: 1600px;
-    background: #e029290a;
-    width: 350px;
-    height: 350px;
-    z-index: -1;
-}
 .experience-area .years-area .years{
     font: normal bold 84px/40px var(--roboto);
     color: var(--primary-color2);
     z-index: 2;
 }
+
 .experience-area .years-area h2 > span{
-    font: normal 600 22px/30px var(--roboto);
+    color: red;
+    font-size: 30px;
 }
 .experience-area .call-area{
     padding-left: 5rem;
@@ -279,10 +284,16 @@ p.para{
     font-family: var(--roboto);
     text-decoration: none;
 }
+/*====END experience area =======*/
 /*End Brand Area*/
+
+
+
+
+
 /*----start services area----*/
 .serivces-area1{
-    padding: 7rem 2rem;
+    padding: 2rem 0rem;
     
 }
 .services-area1 .services-title{
@@ -479,6 +490,7 @@ card-body h4{
 /*--------------START FOOTER--------------------*/
 /*----------footer-------------*/
 .footer{
+    background: whitesmoke;
     width: 100%;
     text-align: center;
     padding: 30px 0;
@@ -664,5 +676,453 @@ card-body h4{
 
 
 /*-------------END PROJECT AREA-----------------*/
+
+nav .fa{
+    display: none;
+}
+
+/*---#######START MEDIA QUERY FOR HEADER SECTION###----*/
+@media screen and (max-width: 400px){
+    .footer{
+        
+    }
+    body{
+		height:100%;
+        background: center;
+        margin-left: 16px;
+        padding: 1px;
+        max-width: 100%;
+        overflow-x:hidden
+        
+    }
+    .header_area .main-menu .navbar .container-fluid {
+        display: flex;
+        position: absolute;
+        
+    }
+    .header_area .main-menu img{
+        max-width: auto;
+        padding: 0.4rem;
+        margin-left:-150px;
+   }
+   .site-main .site-banner .banner-image>img{
+    padding: 7rem 0;
+    width: 50rem;
+   }
+   .para{
+    color: red;
+    margin-bottom: 0.1rem
+}
+
+.header_area .main-menu .navbar .navbar-nav{
+    position: absolute;
+
+    
+}
+/*Head area*/
+.header{
+    min-height: 100vh;
+    width: 100;
+    background-image: linear-gradient (rgba(4,9,30,0.7),rgba(4,9,30,0.7)) url(../img/banner/home-banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position:absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -250px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: 12px;
+    transition: 0.5s;
+    background: black;
+     
+}
+nav-links,ul,li:hover::after{
+    width: 100%;
+}
+.site-buttons{
+    padding-left: 20px;
+}
+
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+.primary-button{
+    background-color:whitesmoke ;
+    background-clip: padding-box;
+    color: rgb(63, 247, 109);
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.secondary-button{
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    color: rgb(63, 247, 109);
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    
+}
+.button.secondary-button:hover{
+    background:var(--gradient-color);
+    background-clip: padding-box;
+     
+}
+.button.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+
+}
+.button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+
+}
+nav .fa{
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav-links ul{
+    padding: 30px;
+}
+
+.site-main .site-banner .banner-image>img{
+    padding: 0rem 0;
+    width: 20rem;
+
+}
+.site-main .about-area .about-image1 img {
+    padding: 0rem 0;
+    width: 20rem;
+}
+
+.site-banner .container h4{}
+
+.chico a{
+    display: block;
+    
+    
+}
+.chico ul li a{
+    font-size: 17px;
+    background: #f44336;
+    height: 13.5vh;
+    z-index: 2;
+    margin-left:-200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.chico ul{
+    padding: 30px;
+}
+   p{
+    color: green;
+    font-size: 20px;
+    }
+    .site-main .brand-area{
+        padding: 1rem 1rem;
+        margin-bottom: 4rem;
+        
+        
+    }
+
+    .brand-area .experience-area{
+        padding-left: 2rem;
+        margin-left: -50px;
+        width: 1px;
+    }
+    .brand-area .ris-wor2 .col-lg-4 > .single-brand{
+        border: 1px solid var(--border-color);
+        
+        padding: 0.3rem 0.5rem;
+        margin: 0.7rem 0.4rem;
+        width: 400px;
+        height: 150px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform .4s ease;
+    }
+    .brand-area .ris-wor2 .col-lg-4 >.single-brand> img{
+        width: 50%;
+    }
+    .brand-area .single-brand:hover{
+        box-shadow: 5px 10px red;
+        transform: scale(1.1);
+        background: pink;
+        transition: transform .4s ease;
+    }
+    .brand-area .ris-wor2 .single-brand:hover> img{
+        filter: brightness(0.15);
+    }
+    
+
+    .experience-area .years-area{
+        background: url(../img/client-info-bg.png) no-repeat 1px 1px;
+        padding: 1rem 0;
+        width: 11rem;
+        height: 15rem;
+        padding-left: -1rem;
+    }
+    .experience-area .years-area .years{
+        color: red;
+    }
+
+
+    /*---PROJECT AREA------*/
+    .container1{
+        display: inline;
+        max-width: 1140px;
+        padding: 1rem 2rem;
+        margin: auto;
+        
+        
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-area{
+        background-color: white;
+        padding: 10px 7px;
+        margin-left: 2px;
+    }
+    .py-4{
+        padding-top: 1.1px;
+        padding-bottom: 1.1px;
+    }
+    .project-title{
+        color: red;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2px;
+    }
+    .project-title h1{
+        font-size: 35px;
+        margin: 10px 19px 2px;
+        position: relative;
+    }
+    .project-area .filter-buttons{
+        flex: 0 0 100%;
+        max-width: 100%;
+        color: blue;
+        margin-bottom: 12px;
+    }
+    .project-area .filter-buttons ul{
+        list-style: none;
+        padding: 0;
+    }
+    .project-area .filter-buttons ul li{
+        font-weight: 500;
+        font-family: var(--roboto);
+        display: inline-block;
+        margin: 4px 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding-bottom: 4px;
+    }
+    .project-area .filter-buttons ul li.active{
+        color: #febd01;
+        border-bottom: 2px solid #febd01;
+    }
+    .project-area .Portfolio-gallery{
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-area .Portfolio-gallery .item{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        position: relative;
+        padding: 4px;
+    }
+    .project-area .Portfolio-gallery .item .inner{
+        position: relative;
+    }
+    .project-area .Portfolio-gallery .item img{
+        width: 100%;
+        display: block;
+    }
+    .project-area .Portfolio-gallery .item .title h4{
+        font-weight: 500;
+        font-family: var(--roboto);
+    }
+    .project-area .Portfolio-gallery a:hover{
+        filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    }
+
+    /*ABOUT AREA*/
+   
+
+     .serivces-area1{
+        padding: 2rem 0rem;
+        
+    }
+    .services-area1 .services-title{
+        padding: 0 4rem;
+    }
+    
+    .services-area1 .services-title h1{
+        font-size: 15px;
+        
+    }
+    .services-area1 .services-title .para{
+        font-size: 15px;
+        text-align: center;
+    }
+    .services-area1 .services{
+        background: rgba(248, 252, 253, 0.973);
+        padding: 1rem 0;
+        width: 17rem;
+        margin: 5rem .5rem;
+        transition: box-shadow .7s ease;
+     }
+     .site-main .about-area img {
+        padding: 3rem 3rem;
+        width: 5rem;
+    }
+    
+    h4{
+        color: red;
+        margin-left: 1px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .about-area2.container.cyt{
+        
+    }
+    .cyt h4{
+        margin-top: -10px;
+        color: black;
+        margin-left: 80px;
+    }
+    .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,0);
+        border-radius: 0.25rem;
+    }
+    .card img{
+        width: 0.1px;
+        padding: 0rem;
+    }
+    .card-body{
+        flex: 1 1 auto;
+        padding:1rem 1rem;
+        background: ;
+        box-shadow: var(--box-shadow);
+    
+    }
+    .owl-carousel .owl-item img{
+        display: block;
+        width: 140%;
+    }
+    p.para1{
+        font-size: 12px;
+        color: red;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+     .card-body1{
+        height:30vh;
+        background: rgba(248, 252, 253, 0.973);
+        padding: 2rem 0;
+        width: 16rem;
+        margin: 5rem .5rem;
+        transition: box-shadow .7s ease;
+     }
+     .subcribe-us-area .container form .input-textbox input{
+        width: 300px;
+        padding: 1rem 1rem;
+        border: 1px solid black;
+        
+        color: black;
+        font: normal 500 17px/20px var(--robot);
+    }
+    .subcribe-us-area .container{
+        background: url(../img/subscribe-bg.png)no-repeat;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        margin-left: 10px;
+    }
+    .services-area1 .services .card-body1:hover{
+        box-shadow: var(--box-shadow;
+    }
+    
+
+    
+      
+    
+     @media screen and (max-width: 400px)
+    /*
+    @media(max-width: 400px){
+    
+        /*start navigation
+        
+        .header_area{
+            padding: 1rem 1rem;
+            font-family: var(--roboto);
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 0.7rem;
+            color:var(--title-color);
+            background: pink;
+        }
+        }
+      */ 
+
+/*---####### END MEDIA QUERY FOR HEADER SECTION###----*/
+
 
 
