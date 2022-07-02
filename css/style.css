@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 *{
     margin: 0;
     padding: 0;
 }
-=======
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 /*IMPORT fonts from fonts.css*/
 
 @import url(../css/fonts.css);
@@ -17,7 +15,6 @@
 
 
 /*start navigation*/
-<<<<<<< HEAD
 .header{
     margin-top: -2.9px;
     min-height: 100vh;
@@ -83,10 +80,6 @@ nav-links,ul,li:hover::after{
 
 
 
-
-
-=======
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
@@ -102,11 +95,11 @@ nav-links,ul,li:hover::after{
 .main-menu .container-fluid .nav-item .nav-link{
    
 }
-<<<<<<< HEAD
+
 .main-menu .navbar-nav .nav-link .active{
-=======
+}
 .main-menu .navbar-nav .nav-link.active{
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
+
     color:rgb(10, 255, 51);
 }
 .navbar-nav a:hover{
@@ -204,19 +197,14 @@ nav-links,ul,li:hover::after{
 /*End Banner area*/
 /*Start About area*/
 .site-main .about-area{
-<<<<<<< HEAD
 
     padding: 3rem 1rem;
 }
 .site-main .about-area img{
     padding: 7rem 0;
     width: 30rem;
-
-}
-=======
     padding: 3rem 1rem;
 }
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 h2 > span{
 display: block;
 font: normal blod 49px/ 60px var(--roboto);
@@ -227,7 +215,7 @@ letter-spacing: 21px;
     padding: 1rem 0;
     color: rgb(71, 62, 62);
 }
-<<<<<<< HEAD
+
 p{
     color: green;
     font: normal 500 6px/ 25px var(--roboto);
@@ -272,11 +260,9 @@ p.para{
 .brand-area .ris-wor2 .col-lg-4 >.single-brand:hover> img{
     filter: brightness(0.15);
 }
-<<<<<<< HEAD
+
 
 /*====START experience area =======*/
-=======
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 .brand-area .experience-area{
     padding-left: 1rem;
 }
@@ -291,8 +277,6 @@ p.para{
     padding-left: 8rem;
     position: relative;
 }
-<<<<<<< HEAD
-=======
 .experience-area .bgpanel{
     
     position: absolute;
@@ -302,21 +286,17 @@ p.para{
     height: 350px;
     z-index: -1;
 }
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 .experience-area .years-area .years{
     font: normal bold 84px/40px var(--roboto);
     color: var(--primary-color2);
     z-index: 2;
 }
-<<<<<<< HEAD
 
 .experience-area .years-area h2 > span{
     color: red;
-    font-size: 30px;
-=======
+    font-size: 30px;}
 .experience-area .years-area h2 > span{
     font: normal 600 22px/30px var(--roboto);
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 }
 .experience-area .call-area{
     padding-left: 5rem;
@@ -325,7 +305,6 @@ p.para{
     font-family: var(--roboto);
     text-decoration: none;
 }
-<<<<<<< HEAD
 /*====END experience area =======*/
 /*End Brand Area*/
 
@@ -336,12 +315,10 @@ p.para{
 /*----start services area----*/
 .serivces-area1{
     padding: 2rem 0rem;
-=======
 /*End Brand Area*/
 /*----start services area----*/
 .serivces-area1{
     padding: 7rem 2rem;
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
     
 }
 .services-area1 .services-title{
@@ -538,10 +515,7 @@ card-body h4{
 /*--------------START FOOTER--------------------*/
 /*----------footer-------------*/
 .footer{
-<<<<<<< HEAD
     background: whitesmoke;
-=======
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
     width: 100%;
     text-align: center;
     padding: 30px 0;
@@ -724,9 +698,6 @@ card-body h4{
 .project-area .grid .our-project .img a:hover img{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
-
-
-<<<<<<< HEAD
 /*-------------END PROJECT AREA-----------------*/
 
 nav .fa{

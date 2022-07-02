@@ -56,21 +56,12 @@
     });
 
     //owl-carousel
-<<<<<<< HEAD
-    console.log('Hurray');
-=======
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
 
     $(".owl-carousel").owlCarousel({
         autoplay:true,
         autoplayhoverpause: true,
         autoplaytimeout: 100,
-<<<<<<< HEAD
-        items: 1,
-        dots: false,
-=======
         items: 2,
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
         nav: true,
         loop: true,
         lazyLoad: true,
@@ -78,18 +69,6 @@
         padding: 5,
         stagePadding: 5,
         responsive: {
-<<<<<<< HEAD
-            
-            700 : {
-                items: 2,
-                dots: 
-                false,
-            },
-            400 : {
-                items: 1,
-                dots: false
-            },
-=======
             0 : {
                 items: 1,
                 dots: false
@@ -98,7 +77,6 @@
                 items: 2,
                 dots: false
             },
->>>>>>> 012aa06d9ecec80e567a631a79968ce9dc1a3072
             /*--- add more pictures
             728 : {
                 items: 3,
