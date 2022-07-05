@@ -74,7 +74,7 @@
                 dots: false
             },
             485 : {
-                items: 2,
+                items: 1,
                 dots: false
             },
             /*--- add more pictures
